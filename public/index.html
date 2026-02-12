@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Bookstore</h1>
+
+  <form action="/books/add" method="POST">
+    <input type="text" name="bookName" placeholder="Enter book name" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <br>
+
+  <input type="text" id="searchInput" placeholder="Search books...">
+  <button onclick="search()">Search</button>
+  <button onclick="loadBooks()">Reset</button>
+
+  <h2>Book List</h2>
+  <div id="book-list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
